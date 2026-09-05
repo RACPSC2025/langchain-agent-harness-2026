@@ -1,0 +1,46 @@
+# =========================================================================
+# 🔐 CURSO LANGCHAIN 2026 - CONFIGURACIÓN DE SEGURIDAD (.gitignore)
+# =========================================================================
+
+# --- Claves y Credenciales (¡CRUCIAL!) ---
+# Nunca subir archivos donde se guarden tokens de OpenAI o Google
+.env
+*.env
+.env.local
+.env.*
+secrets.json
+credentials.json
+
+# --- Archivos de Configuración de Entorno Local ---
+# Evita subir carpetas de entornos virtuales de Python (si algún alumno los usa)
+venv/
+.venv/
+env/
+ENV/
+bin/
+include/
+lib/
+share/
+
+# --- Caché de Python ---
+# Archivos temporales que genera Python al compilar e importar LangChain
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# --- Google Colab y Jupyter Notebooks ---
+# Archivos ocultos que genera Colab si guardan copias locales
+.ipynb_checkpoints/
+.virtualenv/
+
+# --- Sistema Operativo ---
+# Archivos basura automáticos de Windows y macOS
+Thumbs.db
+db.db
+Desktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
