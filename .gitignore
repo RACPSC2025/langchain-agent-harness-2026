@@ -5,9 +5,7 @@
 # --- Claves y Credenciales (¡CRUCIAL!) ---
 # Nunca subir archivos donde se guarden tokens de OpenAI o Google
 .env
-*.env
 .env.local
-.env.*
 secrets.json
 credentials.json
 
@@ -44,3 +42,4 @@ Desktop.ini
 .DS_Store
 .AppleDouble
 .LSOverride
+doc.md
