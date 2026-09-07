@@ -1,4 +1,3 @@
-```markdown
 # 🤖 Modern LangChain: The Agent Harness Era (2026)
 
 [![LangChain](https://img.shields.io/badge/LangChain-2026_Modern_Architecture-1C3C3C?logo=langchain&logoColor=white)](https://docs.langchain.com)
@@ -107,7 +106,6 @@ response = agent.invoke({
 })
 
 print(response["messages"][-1].content)
-```
 
 ---
 
