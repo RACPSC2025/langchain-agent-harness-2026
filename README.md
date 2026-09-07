@@ -107,8 +107,8 @@ response = agent.invoke({
 
 print(response["messages"][-1].content)
 
-### 📁 Repository Structure / Estructura del Repositorio
 
+📁 Repository Structure / Estructura del Repositorio
  langchain-agent-harness-2026/
 ├── 📄 README.md                               ← You are here (Course overview)
 ├── 📄 .env.example                            ← Template for local environment variables
