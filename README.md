@@ -108,17 +108,19 @@ print(response["messages"][-1].content)
 
 ```text
 📦 langchain-agent-harness-2026/
-├── 📄 README.md                 ← You are here (Course overview)
-├── 📄 .env.example              ← Template for local environment variables
-├── 📄 pyproject.toml            ← Python dependencies (uv/pip)
+├── 📄 README.md                               ← You are here (Course overview)
+├── 📄 .env.example                            ← Template for local environment variables
+├── 📄 pyproject.toml                          ← Python dependencies (uv/pip)
 ├── 📂 src/
-│   ├── 📂 es/                   ← 🇪🇸 Spanish version
-│   │   ├── 📄 README.md         ← Guía de estudio detallada (ES)
-│   │   ├── 📄 lesson1_connect_es.ipynb
-│   │   └── 📄 lesson_1_connect.py
-│   └── 📂 en/                   ← 🇬🇧 English version
-│       ├── 📄 README.md         ← Detailed study guide (EN)
-│       └── 📄 lesson_1_connect_en.ipynb
+│   ├── 📂 es/                                 ← 🇪🇸 Spanish version
+│   │   ├── README.md                           ← Guía de estudio detallada (ES)
+│   ├── lesson_1_connect_es.ipynb              ← Nivel Básico (Métodos A y B)
+│   │── lesson_1_connect_advanced_es.ipynb     ← Nivel Avanzado (Método C)
+│   │── lesson_1_connect_es.py
+│   └── 📂 en/                                 ← 🇬🇧 English version
+│       ├── README.md                          ← Detailed study guide (EN)
+│       ├── lesson_1_connect_en.ipynb          ← Basic Level (Methods A & B)
+│       │__ lesson_1_connect_advanced_en.ipynb  ← Advanced Level (Method C)
 └── 📄 LICENSE
 ```
 
