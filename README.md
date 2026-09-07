@@ -107,7 +107,7 @@ response = agent.invoke({
 
 print(response["messages"][-1].content)
 
-
+---
 📁 Repository Structure / Estructura del Repositorio
  langchain-agent-harness-2026/
 ├── 📄 README.md                               ← You are here (Course overview)
@@ -126,21 +126,23 @@ print(response["messages"][-1].content)
         ├── 📄 lesson_1_connect_en.ipynb       ← Basic Level (Methods A & B)
         ├── 📄 lesson_1_connect_advanced_en.ipynb  ← Advanced Level (Method C)
         └── 📄 lesson_2_tools_en.ipynb         ← Tools & Tool Calling (Coming Soon)
+---
 
-
-🎓 Who Is This Course For? / ¿Para quién es este curso?
+---
+## 🎓 Who Is This Course For? / ¿Para quién es este curso?
 - Developers transitioning from traditional LLM wrappers to modern agent architectures.
 - AI Engineers building production-ready, autonomous systems.
 - Students who want to learn LangChain the right way (2026 standards).
 - Technical Leaders evaluating agent frameworks for their teams.
 
-🤝 Contributing / Contribuir
+## 🤝 Contributing / Contribuir
 Contributions, translations, and suggestions are highly welcome!
 1. Fork the repository.
 2. Create a feature branch (git checkout -b feature/amazing-feature).
 3. Commit your changes (git commit -m 'Add amazing feature').
 4. Push to the branch (git push origin feature/amazing-feature).
 5. Open a Pull Request.
+---
 
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
