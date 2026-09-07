@@ -107,8 +107,8 @@ response = agent.invoke({
 
 print(response["messages"][-1].content)
 
+📁 Repository Structure / Estructura del Repositorio
 ---
-
  langchain-agent-harness-2026/
 ├── 📄 README.md                               ← You are here (Course overview)
 ├── 📄 .env.example                            ← Template for local environment variables
@@ -133,7 +133,6 @@ print(response["messages"][-1].content)
 - **AI Engineers** building production-ready, autonomous systems.
 - **Students** who want to learn LangChain the right way (2026 standards).
 - **Technical Leaders** evaluating agent frameworks for their teams.
-
 ---
 
 ## 🤝 Contributing / Contribuir
