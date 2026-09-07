@@ -22,7 +22,7 @@ Este curso está disponible en dos idiomas. Selecciona tu versión preferida par
 
 This repository contains a **step-by-step, hands-on curriculum** designed to teach you how to build AI agents using LangChain's **2026 modern architecture**. 
 
-Unlike traditional courses that start with basic LLM wrappers or sequential chains, we begin directly with the **Agent Harness paradigm**—the industry standard for building autonomous, tool-using, and stateful AI systems.
+Unlike traditional courses that start with basic LLM wrappers or sequential chains, we begin directly with the **Agent Harness paradigm**—the industry standard for building autonomous, tool-using, and intelligent autonomous systems.
 
 ### 🎯 What You'll Learn / Qué aprenderás
 - **Agent Harness Architecture**: The "chassis" that wraps around LLMs to enable autonomous behavior, tool calling, and memory.
@@ -50,7 +50,7 @@ Unlike traditional courses that start with basic LLM wrappers or sequential chai
 | **04** | **Short-term Memory** - Checkpointers, session memory | 🚧 Coming Soon |
 | **05** | **Structured Output** - Pydantic schemas, JSON extraction | 🚧 Coming Soon |
 | **06** | **Streaming** - Real-time token streaming, async execution | 🚧 Coming Soon |
-| **07** | **Middleware** - Dynamic behavior, Harness Profiles, interceptors |  Coming Soon |
+| **07** | **Middleware** - Dynamic behavior, Harness Profiles, interceptors | 🚧 Coming Soon |
 
 ### **Level 2: Production & Advanced Patterns (Producción)**
 | Lesson | Topic / Tema | Status |
@@ -64,7 +64,7 @@ Unlike traditional courses that start with basic LLM wrappers or sequential chai
 ### **Level 3: Optional / Next Level (Avanzado)**
 | Lesson | Topic / Tema | Status |
 |--------|--------------|--------|
-| **13** | **Deep Agents** - "Batteries-included" agents, planning, subagents |  Coming Soon |
+| **13** | **Deep Agents** - "Batteries-included" agents, planning, subagents | 🚧 Coming Soon |
 
 ---
 
@@ -106,10 +106,14 @@ response = agent.invoke({
 })
 
 print(response["messages"][-1].content)
+```
 
 ---
-📁 Repository Structure / Estructura del Repositorio
- langchain-agent-harness-2026/
+
+## 📁 Repository Structure / Estructura del Repositorio
+
+```text
+langchain-agent-harness-2026/
 ├── 📄 README.md                               ← You are here (Course overview)
 ├── 📄 .env.example                            ← Template for local environment variables
 ├── 📄 pyproject.toml                          ← Python dependencies (uv/pip)
@@ -117,34 +121,43 @@ print(response["messages"][-1].content)
 └── 📂 src/
     ├── 📂 es/                                 ← 🇪🇸 Spanish version
     │   ├── 📄 README.md                       ← Guía de estudio detallada (ES)
-    │   ├──  lesson_1_connect_es.ipynb       ← Nivel Básico (Métodos A y B)
+    │   ├── 📄 lesson_1_connect_es.ipynb       ← Nivel Básico (Métodos A y B)
     │   ├── 📄 lesson_1_connect_advanced_es.ipynb  ← Nivel Avanzado (Método C)
     │   ├── 📄 lesson_1_connect_es.py
     │   └── 📄 lesson_2_tools_es.ipynb         ← Tools & Tool Calling (Coming Soon)
-    └──  en/                                 ← 🇬🇧 English version
+    └── 📂 en/                                 ← 🇬🇧 English version
         ├── 📄 README.md                       ← Detailed study guide (EN)
         ├── 📄 lesson_1_connect_en.ipynb       ← Basic Level (Methods A & B)
         ├── 📄 lesson_1_connect_advanced_en.ipynb  ← Advanced Level (Method C)
         └── 📄 lesson_2_tools_en.ipynb         ← Tools & Tool Calling (Coming Soon)
----
+```
 
 ---
+
 ## 🎓 Who Is This Course For? / ¿Para quién es este curso?
-- Developers transitioning from traditional LLM wrappers to modern agent architectures.
-- AI Engineers building production-ready, autonomous systems.
-- Students who want to learn LangChain the right way (2026 standards).
-- Technical Leaders evaluating agent frameworks for their teams.
+- **Developers** transitioning from traditional LLM wrappers to modern agent architectures.
+- **AI Engineers** building production-ready, autonomous systems.
+- **Students** who want to learn LangChain the right way (2026 standards).
+- **Technical Leaders** evaluating agent frameworks for their teams.
+
+---
 
 ## 🤝 Contributing / Contribuir
-Contributions, translations, and suggestions are highly welcome!
+
+Contributions, translations, and suggestions are highly welcome! 
 1. Fork the repository.
-2. Create a feature branch (git checkout -b feature/amazing-feature).
-3. Commit your changes (git commit -m 'Add amazing feature').
-4. Push to the branch (git push origin feature/amazing-feature).
+2. Create a feature branch (`git checkout -b feature/amazing-feature`).
+3. Commit your changes (`git commit -m 'Add amazing feature'`).
+4. Push to the branch (`git push origin feature/amazing-feature`).
 5. Open a Pull Request.
+
 ---
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-Built with ❤️ for the AI engineering community
-Last updated: September 2026
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+**Built with ❤️ for the AI engineering community**  
+*Last updated: September 2026*
