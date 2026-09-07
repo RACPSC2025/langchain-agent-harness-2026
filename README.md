@@ -107,8 +107,8 @@ response = agent.invoke({
 
 print(response["messages"][-1].content)
 
-📁 Repository Structure / Estructura del Repositorio
----
+### 📁 Repository Structure / Estructura del Repositorio
+
  langchain-agent-harness-2026/
 ├── 📄 README.md                               ← You are here (Course overview)
 ├── 📄 .env.example                            ← Template for local environment variables
@@ -127,7 +127,6 @@ print(response["messages"][-1].content)
         ├── 📄 lesson_1_connect_advanced_en.ipynb  ← Advanced Level (Method C)
         └── 📄 lesson_2_tools_en.ipynb         ← Tools & Tool Calling (Coming Soon)
 
----
 ## 🎓 Who Is This Course For? / ¿Para quién es este curso?
 - **Developers** transitioning from traditional LLM wrappers to modern agent architectures.
 - **AI Engineers** building production-ready, autonomous systems.
