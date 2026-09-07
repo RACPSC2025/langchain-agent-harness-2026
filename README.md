@@ -127,6 +127,7 @@ print(response["messages"][-1].content)
         ├── 📄 lesson_1_connect_advanced_en.ipynb  ← Advanced Level (Method C)
         └── 📄 lesson_2_tools_en.ipynb         ← Tools & Tool Calling (Coming Soon)
 
+
 ## 🎓 Who Is This Course For? / ¿Para quién es este curso?
 - **Developers** transitioning from traditional LLM wrappers to modern agent architectures.
 - **AI Engineers** building production-ready, autonomous systems.
