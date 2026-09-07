@@ -109,9 +109,6 @@ print(response["messages"][-1].content)
 
 ---
 
-## 📁 Repository Structure / Estructura del Repositorio
-
-```text
  langchain-agent-harness-2026/
 ├── 📄 README.md                               ← You are here (Course overview)
 ├── 📄 .env.example                            ← Template for local environment variables
@@ -120,7 +117,7 @@ print(response["messages"][-1].content)
 └── 📂 src/
     ├── 📂 es/                                 ← 🇪🇸 Spanish version
     │   ├── 📄 README.md                       ← Guía de estudio detallada (ES)
-    │   ├── 📄 lesson_1_connect_es.ipynb       ← Nivel Básico (Métodos A y B)
+    │   ├──  lesson_1_connect_es.ipynb       ← Nivel Básico (Métodos A y B)
     │   ├── 📄 lesson_1_connect_advanced_es.ipynb  ← Nivel Avanzado (Método C)
     │   ├── 📄 lesson_1_connect_es.py
     │   └── 📄 lesson_2_tools_es.ipynb         ← Tools & Tool Calling (Coming Soon)
@@ -129,7 +126,6 @@ print(response["messages"][-1].content)
         ├── 📄 lesson_1_connect_en.ipynb       ← Basic Level (Methods A & B)
         ├── 📄 lesson_1_connect_advanced_en.ipynb  ← Advanced Level (Method C)
         └── 📄 lesson_2_tools_en.ipynb         ← Tools & Tool Calling (Coming Soon)
-```
 
 ---
 ## 🎓 Who Is This Course For? / ¿Para quién es este curso?
