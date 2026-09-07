@@ -1,53 +1,39 @@
-import os
-from langchain.agents import create_agent
-from langchain.chat_models import init_chat_model
-from google.colab import userdata
+# 🇬🇧 LangChain Modern: Study Guide (English)
 
-# 1. Configuración de la API Key
-os.environ["GEMINI_API_KEY"] = userdata.get('GEMINI_API_KEY')
+Welcome to the English study guide for "LangChain Modern: The Agent Harness Era (2026)". This folder contains the interactive Google Colab notebooks and helper scripts for the English track.
 
-# 2. Definición del Middleware (El "Gestor de Perfiles")
-def apply_harness_profile(runtime):
-    """
-    Middleware que intercepta el contexto de ejecución para inyectar perfiles de 
-    hiperparámetros directamente en la llamada al modelo en tiempo real.
-    """
-    # Recuperamos el contexto dinámico enviado en el .invoke()
-    context = runtime.context if hasattr(runtime, 'context') else {}
-    profile_options = context.get("generation_config", {})
+---
 
-    # Si el usuario especificó parámetros, los vinculamos al modelo sobre la marcha
-    if profile_options:
-        runtime.model = runtime.model.bind(**profile_options)
-    
-    return runtime
+## 📚 Curriculum — Lessons Overview
 
-# 3. Inicializamos el agente UNA SOLA VEZ con el middleware registrado
-# Usamos init_chat_model para máxima flexibilidad
-base_model = init_chat_model("google_genai:gemini-3.6-flash")
+### Level 1: Core Agent Harness (Fundamentals)
 
-agent = create_agent(
-    model=base_model,
-    system_prompt="Eres un asistente de IA versátil. Adapta tu estilo al perfil solicitado.",
-    middleware=[apply_harness_profile] # El arnés ahora procesa perfiles dinámicos
-)
+| Lesson | Topic | Status |
+|--------:|:------|:------:|
+| **01** | **Agent Harness Fundamentals** (`create_agent` + `init_chat_model`) | ✅ Complete |
+| **02** | **Tools & Tool Calling** — `@tool`, custom tools, dynamic selection | 🚧 Coming Soon |
+| **03** | **Messages & Conversation State** — History, state management | 🚧 Coming Soon |
+| **04** | **Short-term Memory** — Checkpointers, session memory | 🚧 Coming Soon |
+| **05** | **Structured Output** — Pydantic schemas, JSON extraction | 🚧 Coming Soon |
+| **06** | **Streaming** — Real-time token streaming, async execution | 🚧 Coming Soon |
+| **07** | **Middleware** — Dynamic behavior, Harness profiles, interceptors | 🚧 Coming Soon |
 
-# 4. EJECUCIÓN: PERFIL 1 (Creativo)
-creative_profile = {"temperature": 0.9, "max_output_tokens": 100}
+### Level 2: Production & Advanced Patterns (Production)
 
-print("🔥 Ejecutando con Perfil Creativo (Temperatura 0.9)...")
-creative_response = agent.invoke(
-    {"messages": [{"role": "user", "content": "Escribe un giro de trama de ciencia ficción en 1 oración."}]},
-    context={"generation_config": creative_profile} # Inyectando el perfil
-)
-print(f"IA 🤖: {creative_response['messages'][-1].content}\n")
+| Lesson | Topic | Status |
+|--------:|:------|:------:|
+| **08** | **Runtime Context** — `context=`, `context_schema`, advanced injection | 🚧 Coming Soon |
+| **09** | **Long-term Memory** — `Store`, cross-session persistence | 🚧 Coming Soon |
+| **10** | **Human-in-the-Loop** — Interrupts, approval flows, safety brakes | 🚧 Coming Soon |
+| **11** | **Guardrails** — Input/Output validation, safety filters, content moderation | 🚧 Coming Soon |
+| **12** | **Observability** — LangSmith tracing, debugging, monitoring | 🚧 Coming Soon |
 
-# 5. EJECUCIÓN: PERFIL 2 (Preciso/Estricto)
-precise_profile = {"temperature": 0.1, "max_output_tokens": 50}
+### Level 3: Optional / Next Level (Advanced)
 
-print("🎯 Ejecutando con Perfil Preciso (Temperatura 0.1)...")
-precise_response = agent.invoke(
-    {"messages": [{"role": "user", "content": "Escribe un giro de trama de ciencia ficción en 1 oración."}]},
-    context={"generation_config": precise_profile} # Inyectando un perfil diferente
-)
-print(f"IA 🤖: {precise_response['messages'][-1].content}")
+| Lesson | Topic | Status |
+|--------:|:------|:------:|
+| **13** | **Deep Agents** — "Batteries-included" agents, planning, subagents | 🚧 Coming Soon |
+
+---
+
+If you'd like, I can also copy other sections from the root README (Quick Start, Repository Structure, or Examples) into this English README to make it a complete standalone study guide. Otherwise this file now contains the lesson menu formatted for professional presentation.
