@@ -22,7 +22,6 @@
 When invoking the harness with dynamic middleware, the execution follows this lifecycle:
 
 ![Execution Flow Diagram](../assets/flow_lesson_2.png)
-*(Placeholder: Insert your visual diagram image here)*
 
 ```mermaid
 flowchart TD
