@@ -181,7 +181,7 @@ print(f"AI 🤖: {response['messages'][-1].content}")
 
 ## 💻 Execute in Google Colab
 
-[👉 **Launch the Colab Notebook for Lesson 1 directly from GitHub](https://www.google.com/url?sa=E&source=gmail&q=https://colab.research.google.com/github/RACPSC2025/langchain-agent-harness-2026/blob/main/01-connect/lesson_1_connect_en.ipynb)**
+[👉 **Launch the Colab Notebook for Lesson 1 directly from GitHub](https://github.com/RACPSC2025/langchain-agent-harness-2026/blob/main/src/en/lesson_1_connect_en.ipynb)**
 
 ```
 
