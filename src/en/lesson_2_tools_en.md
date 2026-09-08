@@ -96,7 +96,7 @@ When you bind this tool to your agent, the following sequence occurs completely 
 
 Theory is great, but seeing the trace logs in real-time is where it clicks. Let's jump into the interactive notebook to watch the LLM communicate with our Python functions.
 
-[👉 **Launch the Colab Notebook for Lesson 2](https://colab.research.google.com/drive/1Rn69Sl1UVo9M6faPoBYds9_YIXpH3CtB#scrollTo=xCSD2beGhp9E)**
+[👉 **Launch the Colab Notebook for Lesson 2](https://github.com/RACPSC2025/langchain-agent-harness-2026/blob/main/src/en/lesson_2_tools_en.ipynb)**
 
 ---
 
