@@ -90,6 +90,8 @@ When you bind this tool to your agent, the following sequence occurs completely 
 
 ---
 
+![Workflow](https://raw.githubusercontent.com/RACPSC2025/langchain-agent-harness-2026/main/assets/flow_lesson_2_tools.png)
+
 ## 🚀 Time to Code
 
 Theory is great, but seeing the trace logs in real-time is where it clicks. Let's jump into the interactive notebook to watch the LLM communicate with our Python functions.
