@@ -1,6 +1,6 @@
 # 🛠️ Lesson 2: Tools & The LLM Contract
 
-![Lesson 2: Tools & The LLM Contract](../assets/banner_lesson_2_tools.png)
+![Lesson 2: Tools & The LLM Contract](https://raw.githubusercontent.com/RACPSC2025/langchain-agent-harness-2026/main/assets/banner_lesson_2_tools.png)
 
 ## Giving hands and eyes to our cognitive engine
 
@@ -21,15 +21,12 @@
 
 When invoking the harness with dynamic middleware, the execution follows this lifecycle:
 
-![Execution Flow Diagram](../assets/flow_lesson_2.png)
-
 ```mermaid
 flowchart TD
     A["👤 User .invoke(context)"] --> B["⚙️ DynamicProfileMiddleware"]
     B -- "Reads generation_config" --> C["🔧 Dynamic .bind()"]
     C -- "Applies Temp & Tokens" --> D["🧠 LLM Inference"]
     D -- "Tool Call Required" --> E["🛠️ Local Python Tool Execution"]
-
 ```
 
 ## 🌱 Getting Started
