@@ -1,10 +1,10 @@
 # 🛠️ Lesson 2: Tools & The LLM Contract
 
-![Lesson 2: Tools & The LLM Contract](../../assets/banner_lesson_2_tools.png)
+![Lesson 2: Tools & The LLM Contract](../assets/banner_lesson_2_tools.png)
 
 ## Giving hands and eyes to our cognitive engine
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Rn69Sl1UVo9M6faPoBYds9_YIXpH3CtB#scrollTo=xCSD2beGhp9E)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RACPSC2025/langchain-agent-harness-2026/blob/main/02-tools/lesson_2_tools.ipynb)
 [![GitHub issues](https://img.shields.io/github/issues/RACPSC2025/langchain-agent-harness-2026.svg)](https://github.com/RACPSC2025/langchain-agent-harness-2026/issues)
 [![Framework: LangChain](https://img.shields.io/badge/LangChain-v0.1.0-blue)]()
 [![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)]()
@@ -13,11 +13,26 @@
 
 | **Previous Lesson** | **Current Lesson** | **Next Lesson** |
 |---------------------|--------------------|-----------------|
-| [⏪ Lesson 1: The Agent Harness](../01-agent-harness/README.md) | **📍 Lesson 2: Tools & Tool Calling** | [⏩ Lesson 3: Advanced APIs & While Loops](../03-advanced-tools/README.md) |
+| [⏪ Lesson 1: Connect & Harness](../01-connect/lesson_1_connect.md) | **📍 Lesson 2: Tools & Tool Calling** | [⏩ Lesson 3: Advanced APIs & Loops](../03-advanced-tools/lesson_3_advanced.md) |
 
 ---
 
+## 🧠 Execution Flow & Middleware Architecture
+
+When invoking the harness with dynamic middleware, the execution follows this lifecycle:
+
+![Execution Flow Diagram](../assets/flow_lesson_2.png)
+*(Placeholder: Insert your visual diagram image here)*
+
+```mermaid
+flowchart TD
+    A["👤 User .invoke(context)"] --> B["⚙️ DynamicProfileMiddleware"]
+    B -- "Reads generation_config" --> C["🔧 Dynamic .bind()"]
+    C -- "Applies Temp & Tokens" --> D["🧠 LLM Inference"]
+    D -- "Tool Call Required" --> E["🛠️ Local Python Tool Execution"]
+
 ## 🌱 Getting Started
+```
 
 In the previous lesson, we built an isolated **Agent Harness**. It could think, but it couldn't interact with the real world. An agent without tools relies entirely on its pre-trained data, which can be outdated or insufficient for specific tasks.
 
