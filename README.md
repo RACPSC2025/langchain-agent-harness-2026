@@ -1,5 +1,7 @@
 # 🤖 Modern LangChain: The Agent Harness Era (2026)
 
+![Modern LangChain Agent Harness Course](https://raw.githubusercontent.com/RACPSC2025/langchain-agent-harness-2026/main/assets/banner_course_main.png)
+
 [![LangChain](https://img.shields.io/badge/LangChain-2026_Modern_Architecture-1C3C3C?logo=langchain&logoColor=white)](https://docs.langchain.com)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org)
 [![Google Colab](https://img.shields.io/badge/Google_Colab-Interactive-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com)
