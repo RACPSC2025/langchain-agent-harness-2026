@@ -30,9 +30,9 @@ flowchart TD
     C -- "Applies Temp & Tokens" --> D["🧠 LLM Inference"]
     D -- "Tool Call Required" --> E["🛠️ Local Python Tool Execution"]
 
-## 🌱 Getting Started
 ```
 
+## 🌱 Getting Started
 In the previous lesson, we built an isolated **Agent Harness**. It could think, but it couldn't interact with the real world. An agent without tools relies entirely on its pre-trained data, which can be outdated or insufficient for specific tasks.
 
 **Agent = Large Language Model (Brain) + Harness (Skeleton) + Tools (Hands/Eyes)**
