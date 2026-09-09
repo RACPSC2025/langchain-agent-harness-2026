@@ -59,7 +59,7 @@ To run the harness, install the minimal packages and initialize the pure convers
 
 ```
 
-```python OpenAI theme={"theme":{"light":"catppuccin-latte","dark":"catppuccin-mocha"}}
+```python Fireworks theme={"theme":{"light":"catppuccin-latte","dark":"catppuccin-mocha"}}
 import os
 from langchain.agents import create_agent
 from google.colab import userdata
