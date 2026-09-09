@@ -61,7 +61,7 @@ To make a tool effective, you must follow two strict rules to fulfill the **LLM 
 1. **Precise Type Hints:** Tell the model exactly what data types to send (e.g., `city: str`).
 2. **Descriptive Docstrings:** This is your tool's "sales pitch". If the LLM doesn't understand *when* or *how* to use it, it will hallucinate or ignore it.
 
-```python
+```python Google theme={"theme":{"light":"catppuccin-latte","dark":"catppuccin-mocha"}}
 from langchain.tools import tool
 
 @tool
